@@ -4,7 +4,7 @@ Vue application to add and manage nodes on a canvas
 ## Overview
 The project is implemented in Vue 2. Here I aimed at several goals:
 1. Create a structure as if it were a real application
-1. Use as much basic technology as possible
+1. Use basic technologies
 1. Get close to the real-world tasks
 
 #### What was done
@@ -16,6 +16,7 @@ The project is implemented in Vue 2. Here I aimed at several goals:
 1. Use Vuex to store data
 1. Use D3.js to control the canvas with zoom and pan
 1. Clean code
+1. Better comments
 
 ## Demo: https://knime-challenge.vercel.app/
 

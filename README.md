@@ -19,7 +19,7 @@ The project is implemented in Vue 2. Here I aimed at several goals:
 
 ## Demo: https://knime-challenge.vercel.app/
 
-![Screenshot](https://github.com/plastiniq/knime-challenge/blob/master/screen-record.gif)
+![Screenshot](https://github.com/plastiniq/knime-challenge/blob/main/screen-record.gif)
 
 ## Project setup
 ```

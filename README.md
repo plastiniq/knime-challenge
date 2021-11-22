@@ -1,5 +1,21 @@
-# knime-challenge
+# Knime Challenge
 Vue application to add and manage nodes on a canvas
+
+## Overview
+The project is implemented in Vue 2. Here I aimed at several goals:
+1. Create a structure as if it were a real application
+1. Use as much basic technology as possible
+1. Get close to the real-world tasks
+
+#### What was done
+1. Sketched in Figma
+1. Created API mock with template-based data generation
+1. Created a simple global theme
+
+#### What else is worth doing in the case of a real rather than a test project
+1. Use Vuex to store data
+1. Use D3.js to control the canvas with zoom and pan
+1. Clean code
 
 ## Demo: https://knime-challenge.vercel.app/
 

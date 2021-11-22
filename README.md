@@ -1,6 +1,10 @@
 # knime-challenge
 Vue application to add and manage nodes on a canvas
 
+## Demo: https://knime-challenge.vercel.app/
+
+![Screenshot](https://github.com/plastiniq/knime-challenge/blob/master/screen-record.gif)
+
 ## Project setup
 ```
 npm install

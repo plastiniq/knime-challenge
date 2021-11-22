@@ -15,23 +15,17 @@ export default {
 }
 </script>
 
-<style lang="scss">
-
-// Bootstrap grid for responsive layout
-@import "~bootstrap/scss/functions";
-@import "~bootstrap/scss/variables";
-@import "~bootstrap/scss/mixins";
-@import "~bootstrap/scss/root";
-@import "~bootstrap/scss/reboot";
-@import "~bootstrap/scss/grid";
-
+<style>
 :root {
-  --global-node-height: 52px;
-  --global-node-width: 52px;
+  --global-move-step: 14px;
+  --global-node-height: calc(var(--global-move-step) * 4);
+  --global-node-width: calc(var(--global-move-step) * 4);
   --global-radius: 7px;
   --global-gap-x: 10px;
   --global-gap-y: 10px;
   --global-duration-short: 0.2s;
+  --global-text-sm: 15px;
+  --global-text-md: 18px;
 }
 
 body, html, #app {

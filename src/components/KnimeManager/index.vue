@@ -1,36 +1,41 @@
 <template>
     <div class="knime-manager">
-        <KnimeSearch :node-list="nodeList" />
-        <KnimeCanvas />
+        <KnimeCanvas :step="step" :node-list="nodeList" />
     </div>
 </template>
 
 <script>
 import { API_NODES_LIST } from "@/constants/api"
-import KnimeSearch from "./KnimeSearch/"
 import KnimeCanvas from "./KnimeCanvas/"
 
 export default {
-  name: 'NodeManager',
-  data: function () {
-      return {
-          nodeList: [],
-      }
-  },
-  created () {
-      this.fetchNodes()
-  },
-  methods: {
-      async fetchNodes () {
-        // Load list of nodes using API
-        const resp = await fetch(process.env.VUE_APP_API_ENDPOINT + API_NODES_LIST)
-        this.nodeList = await resp.json()
-      }
-  },
-  components: {
-      KnimeCanvas,
-      KnimeSearch
-  }
+    name: 'NodeManager',
+    data: function () {
+        return {
+            nodeList: [], // All possible nodes
+        }
+    },
+    created () {
+        this.fetchNodes()
+    },
+    computed: {
+        step() {
+            // Value of CSS variable
+            return parseInt(getComputedStyle(document.documentElement)
+                .getPropertyValue('--global-move-step'))
+        }
+    },
+    methods: {
+        async fetchNodes () {
+            // Load list of nodes using API
+            const resp = await fetch(process.env.VUE_APP_API_ENDPOINT + API_NODES_LIST)
+            this.nodeList = await resp.json()
+        },
+        
+    },
+    components: {
+        KnimeCanvas
+    }
 }
 </script>
 
